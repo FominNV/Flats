@@ -20,4 +20,4 @@
 
 Для подключения к API можно прописать action для получения Flats и сохранить их в store.
 
-Deploy 
+Deploy [#Flats](https://soccer-statistic.vercel.app/)
