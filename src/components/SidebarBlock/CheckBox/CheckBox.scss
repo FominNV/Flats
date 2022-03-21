@@ -1,0 +1,34 @@
+@import "../../../sass/main";
+
+.CheckBox {
+  width: fit-content;
+  height: 14px;
+  margin-top: 7px;
+  @include flex(_, center);
+  font: 400 12px/15px $mont-regular;
+  color: $black;
+  cursor: pointer;
+
+  &__box {
+    display: none;
+
+    &:checked {
+      & ~ .CheckBox__custom {
+        background: $blue-light;
+      }
+
+      & ~ .CheckBox__text {
+        color: $blue;
+      }
+    }
+  }
+
+  &__custom {
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+    padding: 0;
+    border: 1px solid $gray-low-light;
+    border-radius: 2px;
+  }
+}

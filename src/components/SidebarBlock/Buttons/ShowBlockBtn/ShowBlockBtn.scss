@@ -1,0 +1,14 @@
+@import "../../../../sass/main";
+
+.ShowBlockBtn {
+  @include btn-reset;
+  height: 20px;
+  margin-bottom: 7px;
+  font: 400 12px/17.5px $mont-regular;
+  @include flex(_, flex-end);
+  color: $blue-gray;
+
+  &.active {
+    color: $blue;
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../../../sass/main";
+
+.ShowMoreBtn {
+  height: 17px;
+  margin-top: 10px;
+  @include flex(_, center);
+
+  &__btn {
+    @include btn-reset;
+    height: 100%;
+    margin-right: 4px;
+    font: 400 12px/15px $mont-regular;
+    color: $blue;
+  }
+
+  &__arrow {
+    height: 17px;
+    @include flex(_, center);
+
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+}

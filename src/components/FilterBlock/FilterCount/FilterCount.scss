@@ -1,0 +1,11 @@
+@import "../../../sass/main";
+
+.FilterCount {
+  width: 14px;
+  height: 14px;
+  background: $gray-low-light;
+  @include flex(center, center);
+  font: 500 9px/10px $mont-medium;
+  color: $white;
+  border-radius: 50%;
+}

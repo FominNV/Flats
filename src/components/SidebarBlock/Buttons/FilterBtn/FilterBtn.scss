@@ -1,0 +1,24 @@
+@import "../../../../sass/main";
+
+.FilterBtn {
+  @include btn-reset;
+  height: 33px;
+  padding: 10px;
+  margin: 0 4px 4px 0;
+  @include flex;
+  border: 1px solid $gray-low-light;
+  text-align: center;
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &__img {
+    margin-right: 7px;
+  }
+
+  &__title {
+    font: 400 12px/15px $mont-regular;
+    color: $black;
+  }
+}

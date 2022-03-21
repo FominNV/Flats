@@ -1,0 +1,20 @@
+@import "../../../sass/main";
+
+.ButtonBlock {
+  width: 100%;
+  margin-bottom: 25px;
+
+  &__title {
+    @include flex(_, flex-start);
+  }
+
+  &__buttons {
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &.active {
+      @include flex;
+    }
+  }
+}

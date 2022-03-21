@@ -1,0 +1,21 @@
+@import "../../../sass/main";
+
+.FilterPoint {
+  width: 100%;
+  height: auto;
+  min-height: 33px;
+  @include flex;
+  flex-wrap: wrap;
+
+  &__item {
+    @include btn-reset;
+    height: 33px;
+    margin: 4px 4px 0 0;
+    padding: 8px 14px 10px;
+    font: 400 12px/15px $mont-regular;
+    color: $black;
+    background: $white;
+    border: 1px solid $white-gray;
+    border-radius: 2px;
+  }
+}

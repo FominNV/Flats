@@ -1,0 +1,30 @@
+@import "../../sass/main";
+
+.Scheme {
+  width: 62px;
+  height: 30px;
+  @include flex(space-between);
+
+  &__row,
+  &__card {
+    @include btn-reset;
+    width: 30px;
+    height: 30px;
+    background: $white;
+    @include flex(center, center);
+    box-shadow: 0px 4px 10px rgba(0, 19, 35, 0.1);
+    color: $gray-c4;
+
+    &.active {
+      color: $black;
+    }
+  }
+
+  &__row {
+    border-radius: 2px 0 0 2px;
+  }
+
+  &__card {
+    border-radius: 0 2px 2px 0;
+  }
+}

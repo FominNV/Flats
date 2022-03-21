@@ -1,0 +1,86 @@
+@import "../../../sass/main";
+
+.Range {
+  width: 100%;
+  height: 50px;
+
+  &__inputs {
+    width: 100%;
+    height: 33px;
+    @include flex(space-between);
+    box-sizing: border-box;
+
+    &_item {
+      @include inp-reset;
+      width: 128px;
+      padding: 9px 8px;
+      border: 1px solid $gray-low-light;
+      border-radius: 2px;
+      font: 400 12px/15px $mont-regular;
+    }
+  }
+
+  &__slider {
+    width: calc(100% - 16px);
+    height: 16px;
+    margin: 12px auto 0;
+    transition: none;
+  }
+}
+
+.rc-slider-handle,
+.rc-slider-handle-1,
+.rc-slider-handle-2 {
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  background: $white;
+  border: 1px solid $gray-low-light;
+  opacity: 1;
+  transition: none;
+
+  &:hover {
+    border: 1px solid $black;
+  }
+
+  &:active {
+    box-shadow: none;
+    background: $white;
+    border-color: $black;
+  }
+
+  &:focus-visible {
+    box-shadow: none;
+    background: $white;
+    border: 1px solid $black;
+  }
+}
+
+.rc-slider-handle.rc-slider-handle-1.rc-slider-handle-dragging,
+.rc-slider-handle.rc-slider-handle-2.rc-slider-handle-dragging {
+  box-shadow: none;
+  border-color: $black;
+  transition: none;
+
+  &:hover {
+    border: 1px solid $black;
+  }
+
+  &:active {
+    box-shadow: none;
+    background: $white;
+    border-color: $black;
+  }
+
+  &:focus-visible {
+    box-shadow: none;
+    background: $white;
+    border: 1px solid $black;
+  }
+}
+
+.rc-slider-track-1,
+.rc-slider-rail {
+  height: 1px;
+  background: $black;
+}
