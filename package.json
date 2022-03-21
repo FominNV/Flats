@@ -57,5 +57,16 @@
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-react": "^7.29.4",
     "gh-pages": "^3.2.3"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FominNV/Flats.git"
+  },
+  "author": "Fomin Nikolai <kk309@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FominNV/Flats/issues"
+  },
+  "description": ""
 }

@@ -8,10 +8,6 @@
 
   &.row {
     width: 100%;
-
-    .FlatCard__img-wrap {
-      @include flex(flex-start, center);
-    }
   }
 
   @media (max-width: $xl) {
