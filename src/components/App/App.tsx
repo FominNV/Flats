@@ -9,7 +9,7 @@ const App: FC = (): JSX.Element => {
   return (
     <HelmetProvider>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="*" element={<Main />} />
       </Routes>
     </HelmetProvider>
   )
