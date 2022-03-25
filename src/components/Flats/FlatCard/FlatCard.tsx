@@ -34,7 +34,10 @@ const FlatCard: FC<IFlatCardProps> = ({ flat }): JSX.Element => {
 
         <div className="FlatCard__info">
           <h4>{`${usePlanFlat(flat.planLink)}, ${flat.squares} м²`}</h4>
-          <button onClick={setFavoriteFlat} className={`FlatCard__heart ${favorited && "active"}`}>
+          <button
+            onClick={setFavoriteFlat}
+            className={`FlatCard__heart ${favorited ? "FlatCard__heart_active" : ""}`}
+          >
             <Heart />
           </button>
         </div>
