@@ -1,10 +1,9 @@
 import { FC, useEffect } from "react"
 import { useTypedSelector } from "../../../store/selectors"
-import { IFilterCountProps } from "./FilterCountTypes"
 
 import "./FilterCount.scss"
 
-const FilterCount: FC<IFilterCountProps> = ({ count }): JSX.Element => {
+const FilterCount: FC = (): JSX.Element => {
   const { filters } = useTypedSelector((state) => state.flat)
 
   const countFilters = (data: (string | number)[]): number => {
