@@ -4,6 +4,7 @@
   width: 14px;
   height: 14px;
   background: $gray-low-light;
+  margin-bottom: 1px;
   @include flex(center, center);
   font: 500 9px/10px $mont-medium;
   color: $white;
