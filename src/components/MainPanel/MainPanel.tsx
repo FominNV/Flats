@@ -25,7 +25,7 @@ const MainPanel: FC = (): JSX.Element => {
           flats.filtered ? flats.filtered.length : flats.all.length
         } планировок`}</h3>
         <div className="MainPanel__clear">
-          <FilterCount count={0} />
+          <FilterCount />
 
           <p className="MainPanel__clear_text">Фильтр</p>
 
