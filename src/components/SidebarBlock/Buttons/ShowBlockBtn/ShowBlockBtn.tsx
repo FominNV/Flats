@@ -9,7 +9,10 @@ const ShowBlockBtn: FC<IShowBlockBtnProps> = ({ name, setState, stateValue }): J
   }
 
   return (
-    <button className={`ShowBlockBtn ${stateValue && "active"}`} onClick={onClickHandler}>
+    <button
+      className={`ShowBlockBtn ${stateValue && "ShowBlockBtn_active"}`}
+      onClick={onClickHandler}
+    >
       {name}
     </button>
   )

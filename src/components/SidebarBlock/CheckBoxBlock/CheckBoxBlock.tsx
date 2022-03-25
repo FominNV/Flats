@@ -16,7 +16,9 @@ const CheckBoxBlock: FC<ICheckBoxBlockProps> = ({ title, data, id }): JSX.Elemen
   return (
     <div className="CheckBoxBlock">
       <SidebarTitle title={title} />
-      <div className={`CheckBoxBlock__boxes ${showMore && "active"}`}>{showCheckboxes(data)}</div>
+      <div className={`CheckBoxBlock__boxes ${showMore && "CheckBoxBlock__boxes_active"}`}>
+        {showCheckboxes(data)}
+      </div>
       {data.length > 6 && <ShowMoreBtn stateValue={showMore} setState={setShowMore} />}
     </div>
   )

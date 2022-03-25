@@ -9,7 +9,7 @@
     max-height: 127px;
     overflow: hidden;
 
-    &.active {
+    &_active {
       max-height: fit-content;
     }
   }

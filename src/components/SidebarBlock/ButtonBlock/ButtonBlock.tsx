@@ -36,7 +36,7 @@ const ButtonBlock: FC<IButtonBlockProps> = ({
           <ShowBlockBtn name={btnBlockName} setState={setShowButtons} stateValue={showButtons} />
         )}
       </div>
-      <div className={`ButtonBlock__buttons ${showButtons && "active"}`}>
+      <div className={`ButtonBlock__buttons ${showButtons && "ButtonBlock__buttons_active"}`}>
         {showProjectFilters(data)}
       </div>
     </div>

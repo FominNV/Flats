@@ -18,7 +18,7 @@ const FlatCard: FC<IFlatCardProps> = ({ flat }): JSX.Element => {
   }
 
   return (
-    <div className={`FlatCard ${cardShowMode === CARD_SHOW_MODE.ROW && "row"}`}>
+    <div className={`FlatCard ${cardShowMode === CARD_SHOW_MODE.ROW && "FlatCard_row"}`}>
       <div className="FlatCard__content">
         <div className="FlatCard__img-wrap">
           <img className="FlatCard__img" src={flat.photos[0]} alt={flat.name} />

@@ -26,14 +26,14 @@ const Scheme: FC = (): JSX.Element => {
       <button
         onClick={setCardMode}
         name="row"
-        className={`Scheme__row ${cardShowMode === CARD_SHOW_MODE.ROW && "active"}`}
+        className={`Scheme__row ${cardShowMode === CARD_SHOW_MODE.ROW && "Scheme__row_active"}`}
       >
         <Row />
       </button>
       <button
         onClick={setCardMode}
         name="card"
-        className={`Scheme__card ${cardShowMode === CARD_SHOW_MODE.CARD && "active"}`}
+        className={`Scheme__card ${cardShowMode === CARD_SHOW_MODE.CARD && "Scheme__card_active"}`}
       >
         <Card />
       </button>

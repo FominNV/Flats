@@ -15,7 +15,7 @@ const ShowMoreBtn: FC<IShowMoreBtnProps> = ({ setState, stateValue }): JSX.Eleme
       <button onClick={onClickHandler} className="ShowMoreBtn__btn">
         {stateValue ? "Скрыть" : "Показать все"}
       </button>
-      <div className={`ShowMoreBtn__arrow ${stateValue && "active"}`}>
+      <div className={`ShowMoreBtn__arrow ${stateValue && "ShowMoreBtn__arrow_active"}`}>
         <Arrow />
       </div>
     </div>

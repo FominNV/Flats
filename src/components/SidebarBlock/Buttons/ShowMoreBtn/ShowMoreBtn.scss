@@ -17,7 +17,7 @@
     height: 17px;
     @include flex(_, center);
 
-    &.active {
+    &_active {
       transform: rotate(180deg);
     }
   }
